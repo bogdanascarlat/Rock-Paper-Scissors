@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <div id="score">
+      <div>
+        <h2>Player Score:</h2>
+        <p id="player-score"></p>
+      </div>
+      <div>
+        <h2>Computer Score:</h2>
+        <p id="computer-score"></p>
+      </div>
+    </div>
+    <div id="choice">
+      <button onclick="playRound('rock')" class="green-btn">Rock</button>
+      <button onclick="playRound('paper')" class="yellow-btn">Paper</button>
+      <button onclick="playRound('scissors')" class="blue-btn">Scissors</button>
+    </div>
+    <div id="selection">
+      <div>
+        <h2>Player Chooses:</h2>
+        <p id="player-select"></p>
+      </div>
+      <div>
+        <h2>Computer Chooses:</h2>
+        <p id="computer-select"></p>
+      </div>
+    </div>
+    <div id="results">Choose a button to play a round</div>
+    <div id="modal" class="hide-modal">
+      <div id="win-results"></div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
